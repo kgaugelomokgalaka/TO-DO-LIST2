@@ -28,6 +28,8 @@ header,form{
     border: none;
     background: white;
     border-radius: 2rem;
+    padding: 1.3rem;
+    margin: 0.1rem;
  }
   form button{
     color: blueviolet;
@@ -62,6 +64,10 @@ header,form{
     align-items: center;
     transition:0,5s ;
     border-radius: 2rem;
+  }
+  .todo-button{
+    color: blueviolet;
+    padding: 1.2rem;
   }
   .todo li{
     flex: 1;
