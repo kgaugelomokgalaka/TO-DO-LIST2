@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: beige;
+  background-image: linear-gradient( rgba(183, 43, 226, 0.377), rgba(255, 0, 221, 0.548), rgba(158, 45, 64, 0.774) , rgba(167, 9, 88, 0.527));
     color: black;
     font-family: "poppins",sans-serif;
     min-height: 100vh;
+    font-family: 'Aclonica';font-size: 22px;
 }
+
 
 header{
     font-size: 1,5rem;
@@ -64,6 +66,7 @@ header,form{
     align-items: center;
     transition:0,5s ;
     border-radius: 2rem;
+   
   }
   .todo-button{
     color: blueviolet;
@@ -85,9 +88,12 @@ header,form{
     border-top-right-radius: 1.75rem;
     border-bottom-right-radius: 1.75rem;
     background: rgb(red, green, blue);
+    padding: 1.5rem;
   }
   .todo-item{
-    padding: 8rem 8.5rem;
+    padding: 4rem;
+    margin: 1.5rem;
+    padding: 2rem;;
   }
   .completed{
     text-decoration: line-through;

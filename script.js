@@ -102,15 +102,19 @@ function getLocalTodos() {
         newTodo.classList.add("todo-item");
         todoDiv.appendChild(newTodo);
 
-        const completedButton = document.createElement("button");
-        completedButton.innerHTML = '<i class="fas fa-check-circle"></i>';
-        completedButton.classList.add("complete-btn");
-        todoDiv.appendChild(completedButton);
+    // complete button and delete button
 
-        const trashButton = document.createElement("button");
-        trashButton.innerHTML = '<i class="fas fa-trash"></i>';
-        trashButton.classList.add("trash-btn");
-        todoDiv.appendChild(trashButton);
+    const completedButton = document.createElement("button");
+    completedButton.innerHTML = '<i class="fa fa-check" style="font-size:24px"></i>';
+    completedButton.classList.add("complete-btn");
+    todoDiv.appendChild(completedButton);
+
+    // Trash button
+    const trashButton = document.createElement("button");
+    trashButton.innerHTML = '<i class="material-icons" style="font-size:36px">delete</i>';
+    trashButton.classList.add("trash-btn");
+    todoDiv.appendChild(trashButton);
+
 
         todoList.appendChild(todoDiv);
     });
