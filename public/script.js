@@ -102,7 +102,7 @@ function getLocalTodos() {
         newTodo.classList.add("todo-item");
         todoDiv.appendChild(newTodo);
 
-    // complete button and delete button
+    // complete button 
 
     const completedButton = document.createElement("button");
     completedButton.innerHTML = '<i class="fa fa-check" style="font-size:24px"></i>';
