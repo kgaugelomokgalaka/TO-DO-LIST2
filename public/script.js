@@ -21,12 +21,12 @@ function addTodo(event) {
     saveLocalTodos(todoInput.value);
 
     const completedButton = document.createElement("button");
-    completedButton.innerHTML = '<i class="fas fa-check-circle"></i>';
+    completedButton.innerHTML = '<i class="fa fa-check"></i>';
     completedButton.classList.add("complete-btn");
     todoDiv.appendChild(completedButton);
 
     const trashButton = document.createElement("button");
-    trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+    trashButton.innerHTML = '<i class="material-icons" style="font-size:36px">delete</i>';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
 
@@ -35,8 +35,10 @@ function addTodo(event) {
 }
 
 function deleteCheck(e) {
-    const item = e.target;
-    if (item.classList[0] === "trash-btn") {
+    const item = e.target.parentNode;
+    console.log(e.target.parentNode);
+    
+    if (item.classList.contains('trash-btn')) {
         const todo = item.parentElement;
         todo.classList.add("slide");
         removeLocalTodos(todo);
