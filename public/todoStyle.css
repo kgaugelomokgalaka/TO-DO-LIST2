@@ -77,7 +77,7 @@ header,form{
   }
   .trash-bnt,
   .complete-bnt{
-    color: white;
+    color: black;
     border: none;
     padding: 1rem;
     cursor: pointer;
